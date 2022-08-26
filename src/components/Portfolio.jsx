@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 // import components
-import Projects from './Projects';
+import Projects from './Projects'
 
 const Portfolio = () => {
   return (
@@ -12,14 +12,14 @@ const Portfolio = () => {
             My latest work
           </h2>
           <p className='subtitle'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam
-            labore nisium illum cupiditate reiciendis a numquam
+            From beginning ideas to individual integrity, rich identity from the line on the paper
+            to final projects.
           </p>
         </div>
         <Projects />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Portfolio;
+export default Portfolio

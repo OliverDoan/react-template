@@ -1,7 +1,5 @@
-import React from 'react';
-
-// import services data
-import { services } from '../data';
+import React from 'react'
+import { services } from '../data/services'
 
 const Services = () => {
   return (
@@ -12,13 +10,13 @@ const Services = () => {
             What I do for clients
           </h2>
           <p className='subtitle'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam
-            labore nisium illum cupiditate reiciendis a numquam
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam labore nisium illum
+            cupiditate reiciendis a numquam
           </p>
         </div>
         <div className='grid lg:grid-cols-4 gap-8'>
           {services.map((service, index) => {
-            const { icon, name, description } = service;
+            const { icon, name, description } = service
             return (
               <div className='bg-secondary p-6 rounded-2xl' key={index}>
                 <div className='text-accent rounded-sm w-12 h-12 flex justify-center items-center mb-24 text-[28px]'>
@@ -27,12 +25,12 @@ const Services = () => {
                 <h4 className='text-xl font-medium mb-2'>{name}</h4>
                 <p>{description}</p>
               </div>
-            );
+            )
           })}
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Services;
+export default Services

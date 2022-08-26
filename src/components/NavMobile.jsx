@@ -1,23 +1,13 @@
-import React, { useState } from 'react';
-
-// import icons
-import { XIcon } from '@heroicons/react/outline';
-import { MenuAlt3Icon } from '@heroicons/react/outline';
-
-// import navigation data
-import { navigation } from '../data';
-
-// import components
-import Socials from './Socials';
-
-// import framer
-import { motion } from 'framer-motion';
-
-// import Link
-import { Link } from 'react-scroll';
+import React, { useState } from 'react'
+import { XIcon } from '@heroicons/react/outline'
+import { MenuAlt3Icon } from '@heroicons/react/outline'
+import { navigation } from '../data/navigation'
+import Socials from './Socials'
+import { motion } from 'framer-motion'
+import { Link } from 'react-scroll'
 
 const NavMobile = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const circleVariants = {
     hidden: {
@@ -31,7 +21,7 @@ const NavMobile = () => {
         damping: 60,
       },
     },
-  };
+  }
 
   const ulVariants = {
     hidden: { opacity: 0 },
@@ -41,14 +31,11 @@ const NavMobile = () => {
         delay: 0.1,
       },
     },
-  };
+  }
 
   return (
     <nav className='relative'>
-      <div
-        onClick={() => setIsOpen(true)}
-        className='cursor-pointer text-white'
-      >
+      <div onClick={() => setIsOpen(true)} className='cursor-pointer text-white'>
         <MenuAlt3Icon className='w-8 h-8' />
       </div>
 
@@ -68,10 +55,7 @@ const NavMobile = () => {
           isOpen ? 'right-0' : '-right-full'
         } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 overflow-hidden`}
       >
-        <div
-          onClick={() => setIsOpen(false)}
-          className='cursor-pointer absolute top-8 right-8'
-        >
+        <div onClick={() => setIsOpen(false)} className='cursor-pointer absolute top-8 right-8'>
           <XIcon className='w-8 h-8' />
         </div>
         {navigation.map((item, idx) => {
@@ -87,12 +71,12 @@ const NavMobile = () => {
                 {item.name}
               </Link>
             </li>
-          );
+          )
         })}
         <Socials />
       </motion.ul>
     </nav>
-  );
-};
+  )
+}
 
-export default NavMobile;
+export default NavMobile

@@ -20,19 +20,18 @@ const About = () => {
               </h2>
               <p className='mb-4 text-accent'>Full Stack Developer</p>
               <hr className='mb-8 opacity-5' />
-              <p className='mb-8'>
-                Hi! My name is Oliver Doan. I am a Web Developer, and I'm very
-                passionate and dedicated to my work. With 1 years experience as
-                a professional Web developer, I have acquired the skills and
-                knowledge necessary to make your project a success.
-                <br />
-                <br />
-                Qui doloremque quod sit accusantium unde totam inventore
-                cupiditate ratione esse maxime eum recusandae ducimus.
+              <p className='mb-8 text-justify'>
+                Hi! My name is Oliver Doan. I am a Web Developer, and I'm very passionate and
+                dedicated to my work. With 1 years experience as a professional Web developer, I
+                have acquired the skills and knowledge necessary to make your project a success.
+              </p>
+              <p className='mb-8 text-justify'>Birthday: 10/05/1999</p>
+              <p className='mb-8 text-justify'>
+                Education: HCMC University of Technology and Education
               </p>
             </div>
             <button className='btn btn-md bg-accent hover:bg-secondary-hover transition-all'>
-              Contact me
+              Download CV
             </button>
           </div>
         </div>

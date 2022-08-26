@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 
 // import components
-import TestiSlider from './TestiSlider';
+import TestiSlider from './TestiSlider'
 
 const Testimonials = () => {
-
   return (
     <section id='testimonials' className='section bg-secondary'>
       <div className='container mx-auto'>
@@ -13,14 +12,13 @@ const Testimonials = () => {
             What other people say
           </h2>
           <p className='subtitle'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam
-            labore nisium illum cupiditate reiciendis a numquam
+            I've been fortunate to work with and for people from some amazing organizations.
           </p>
         </div>
         <TestiSlider />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Testimonials;
+export default Testimonials
