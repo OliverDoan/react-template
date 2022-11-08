@@ -1,10 +1,10 @@
-import './assets/scss/styles.scss'
+import '@styles/App.global.scss';
 function App() {
   return (
     <>
       <h1>Hello React</h1>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
