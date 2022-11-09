@@ -34,9 +34,17 @@ function App(props) {
       editTask={editTask}
     />
   ));
+  function taskExists(name) {
+    return tasks.some(function (el) {
+      return el.name === name;
+    });
+  }
   function addTask(name) {
     const newTask = { id: `todo-${nanoid()}`, name, completed: false };
-    setTasks([...tasks, newTask]);
+
+    if (!taskExists(newTask.name)) {
+      setTasks([...tasks, newTask]);
+    }
   }
   function editTask(id, newName) {
     const editedTaskList = tasks.map((task) => {

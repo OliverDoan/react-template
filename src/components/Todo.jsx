@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export default function Todo(props) {
-  const [newName, setNewName] = useState('');
+  const [newName, setNewName] = useState(props.name);
   const [isEditing, setEditing] = useState(false);
   function handleChange(e) {
     setNewName(e.target.value);
@@ -9,7 +9,6 @@ export default function Todo(props) {
   function handleSubmit(e) {
     e.preventDefault();
     props.editTask(props.id, newName);
-    setNewName('');
     setEditing(false);
   }
   const editingTemplate = (
